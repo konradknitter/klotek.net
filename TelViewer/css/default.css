@@ -1,0 +1,65 @@
+*{
+	font-size:14px;
+	font-family:Verdana;
+}
+body {
+	background:#FFFFFF;
+
+}
+
+input {
+	margin-bottom:20px;
+}
+
+#results table, th, td, tr {
+	border:1px solid #000;
+}
+
+#centext{
+	margin: 30px 150px 0px;
+	
+}
+
+#formtobase{
+	text-align: center;
+}
+
+
+#ce{
+	text-align: right;
+}
+
+/* copied from deathmonkeyz.com */
+
+#footer {
+	background:#EDEDED;
+	color:#000;
+	border:1px solid #000;	
+	margin-bottom:10px;
+	overflow:auto;
+}
+
+#footer p {
+	margin:2px;	
+	font-size:11px;
+}
+
+#footer .first {
+	float:left;
+}
+
+#footer .last {
+	float:right;
+}
+
+#footer a {
+	margin:0 2px;
+	font-size:11px;
+	color:#900;
+	text-decoration:none;
+}
+
+#footer a:hover {
+	text-decoration:underline;
+	color:#600;
+}

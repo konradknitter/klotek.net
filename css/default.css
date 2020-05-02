@@ -1,0 +1,44 @@
+*{
+	font-size:9.5px;
+	font-family:Verdana;
+}
+body {
+	background:#333333;
+
+}
+/* copied from deathmonkeyz.com */
+
+#footer {
+	background:#525252;
+	color:#FFF;
+	border:1px solid #000;	
+	margin-bottom:10px;
+	overflow:auto;
+}
+
+
+#comments {
+	border:1px solid #FFF;
+}
+
+#footer p {
+	margin:2px;	
+	font-size:9.5px;
+}
+
+#footer .first {
+	float:left;
+}
+
+#footer .last {
+	float:right;
+}
+
+#wybor {
+	font-size: 11px;
+}
+
+#post {
+	margin-left: 20px;
+	margin-right: 20px;
+}

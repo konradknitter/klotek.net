@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<style type="text/css">
+
+
+
+</style>
+		<style type="text/css">
+			@import url("css/default.css");
+		</style>
+<title>TelViewer - by klotek.net</title>
+<script src="telviewer.js"></script>
+</head>
+<body>
+<div align="center"><b>TelViewer</b> - Alpha
+<br /><br />
+<form action="javascript:startSearch()">
+<input type="text" size="40" id="field" />
+<input type="submit" value="Szukaj" />
+</form>
+<div id="results">
+</div>
+</div>
+<br />
+<div id="centext">
+<b>Update Status: 21:01 28 lutego 2009</b><br />
+No to tyle zrobione zostalo dzis.. troche nerwow z pomylka znaczka ` i ' - dla mnie to samo.. babskie problemy.<br /> 
+W skrocie, baza ma trzy telefony. Przeszukuje telefony z niej zapomoca szukajki. na postawie: <br />
+<li />CALEGO kodu kraju - czyt. cale 48, nie samo 4 albo 8.<br />
+<li />Czesci, badz calego numeru - kazdej czesci, moge zrobic by jednak szukal tylko po poczatku <br />
+<li />Imieniu, Nazwisku badz jego czesci. <br />
+<br />
+jutro bede bawil sie z administracja i dodawaniem numerow do bazy z poziomu przegladarki zajmie jakies 1.30 godziny. <br/>
+a potem obrobka graficzna. <br />
+</div>
+<div id="formtobase">
+Formularz dodawania rzeczy do bazy.. akurat to teraz robie - wiec nie dziala [ale mozna ogladac postep prac xd]
+<form action="post.php" method="post">
+<table>
+<tr>
+<th width="100">numer kraju</th><th>numer telefonu</th><th>osoba</th>
+</tr>
+<tr>
+<td><input type="text" size="40" id="concode" value="48" /></td>
+<td><input type="text" size="40" id="telnum" /></td>
+<td><input type="text" size="40" id="name" /></td>
+</tr>
+</table>
+<input type="submit" value="Wyslij" />
+</form>
+</div>
+<div id="adminlg">
+</div>
+
+ <?php
+$concode = $_POST['concode'];
+$telnum = $_POST['telnum'];
+$name = $_POST['name'];
+
+echo $concode, $telnum, $name;
+
+
+?> 
+
+</body>
+</html>
